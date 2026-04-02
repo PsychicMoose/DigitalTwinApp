@@ -8,12 +8,13 @@
       "url": "https://packages.unity.com"
     },
     "com.labbenchstudios.pdt.unity": {
-      "version": "file:C:/DigitalTwins/LabBenchStudios-PDT-Unity",
+      "version": "https://github.com/programming-digital-twins/LabBenchStudios-PDT-Unity.git",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.textmeshpro": "4.0.0"
-      }
+      },
+      "hash": "5fa81d21bf068dbadfbec4a083e80ed987886998"
     },
     "com.unity.2d.animation": {
       "version": "13.0.2",

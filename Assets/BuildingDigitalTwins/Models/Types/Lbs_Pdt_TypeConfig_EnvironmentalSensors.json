@@ -1,0 +1,83 @@
+{
+  "typeName": "environmentalSensorData",
+  "version": "2024-11-18",
+  "description": "Environmental sensor data category configuration.",
+  "displayName": "Environmental Sensor Data Category",
+  "modelName": "dtmi:LabBenchStudios:PDT:environmentalSensorData;1",
+  "id": 1000,
+  "minId": 1001,
+  "maxId": 1999,
+  "modelConstraints": {
+    "enableConstraints": true,
+    "enableDutyCycle": true,
+    "dutyCycleSeconds": "60.0",
+    "minDutyCycle": "0.0",
+    "maxDutyCycle": "90.0",
+    "optimalDutyCycle": "50.0"
+  },
+  "typeEntries": {
+    "relativeHumidity": {
+      "typeName": "relativeHumidity",
+      "description": "Humidity type configuration.",
+      "displayName": "Humidity",
+      "modelName": "dtmi:LabBenchStudios:PDT:relativeHumidityData;1",
+      "resourceName": "{productName}/{groupdID}/{locationID}/{deviceID}/{typeName}",
+      "dataContainerType": "LabBenchStudios.Pdt.Data.SensorData",
+      "id": 1010,
+      "modelConstraints": {
+        "enableConstraints": true,
+        "enableDutyCycle": false,
+        "unit": "%",
+        "targetValue": "45.0",
+        "nominalValueDelta": "0.0",
+        "maxValueDelta": "0.0",
+        "rangeNominalFloor": "30.0",
+        "rangeNominalCeiling": "50.0",
+        "rangeMaxFloor": "20.0",
+        "rangeMaxCeiling": "80.0"
+      }
+    },
+    "barometricPressure": {
+      "typeName": "barometricPressure",
+      "description": "Barometric pressure type configuration.",
+      "displayName": "Pressure",
+      "modelName": "dtmi:LabBenchStudios:PDT:barometricPressureData;1",
+      "resourceName": "{productName}/{groupdID}/{locationID}/{deviceID}/{typeName}",
+      "dataContainerType": "LabBenchStudios.Pdt.Data.SensorData",
+      "id": 1011,
+      "modelConstraints": {
+        "enableConstraints": true,
+        "enableDutyCycle": false,
+        "unit": "mbar",
+        "targetValue": "1010.0",
+        "nominalValueDelta": "0.0",
+        "maxValueDelta": "0.0",
+        "rangeNominalFloor": "990.0",
+        "rangeNominalCeiling": "1020.0",
+        "rangeMaxFloor": "975.0",
+        "rangeMaxCeiling": "1025.0"
+      }
+    },
+    "temperature": {
+      "typeName": "temperature",
+      "description": "Temperature type configuration.",
+      "displayName": "Temperature",
+      "modelName": "dtmi:LabBenchStudios:PDT:temperatureData;1",
+      "resourceName": "{productName}/{groupdID}/{locationID}/{deviceID}/{typeName}",
+      "dataContainerType": "LabBenchStudios.Pdt.Data.SensorData",
+      "id": 1012,
+      "modelConstraints": {
+        "enableConstraints": true,
+        "enableDutyCycle": false,
+        "unit": "C",
+        "targetValue": "24.0",
+        "nominalValueDelta": "0.0",
+        "maxValueDelta": "0.0",
+        "rangeNominalFloor": "18.0",
+        "rangeNominalCeiling": "27.0",
+        "rangeMaxFloor": "15.0",
+        "rangeMaxCeiling": "30.0"
+      }
+    }
+  }
+}
